@@ -13,14 +13,11 @@ b. Ada berapa jenis protocol yang terekam pada traffic?
 c. sebutkan secara berurutan berdasarkan alfabet menurun dengan koma sebagai separator dan dalam bentuk uppercase, contoh: PROTOCOL1,PROTOCOL2
 
 ### Penyelesaian
-a. Untuk mengetahui berapa banyak packet yang terekam pada file pcapng dapat dilihat pada tulisan `Packets:` pada bawah window wireshark.
-![](images/1a.png)  
-Namun untuk mendapatkan packet yang secara spesifik hanya bisa dikirim dengan FTP, dapat menggunakan display filter `ftp contains "STOR"` karena command STOR hanya bisa dilakukan melalui FTP  
-![](images/1b.png)  
-Setelah packet didapatkan, tinggal dilihat sequence number (raw) dan acknowledgement number (raw) dengan membuka section Transmission Control Protocol seperti berikut:  
-![](images/1c.png)  
-Untuk mendapatkan packet response, display filter yang digunakan adalah `ftp contains "zip"` karena command STOR digunakan untuk upload file zip.  
-![](images/1d.png)  
+Untuk mengetahui berapa banyak packet yang terekam pada file pcapng dapat dilihat pada tulisan `Packets:` pada bawah windows wireshark.
+![](images/1a.jpg)  
+
+Untuk mengetahui ada berapa jenis protocol yang terekam pada traffic, kita bisa membuka tabs `statistics` lalu `protocol hierarchy` dan juga tertera jenis protocol maupun sub-protocol yang terekam pada traffic.
+![](images/1b.jpg)  
 
 ### Perolehan flag:  
-![](images/1e.png)  
+![](images/1c.jpg)  
