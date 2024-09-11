@@ -20,4 +20,4 @@ Untuk mengetahui ada berapa jenis protocol yang terekam pada traffic, kita bisa 
 ![](images/1b.jpg)  
 
 ### Perolehan flag:  
-![](images/1c.jpg)  
+![](images/1c.png)  
