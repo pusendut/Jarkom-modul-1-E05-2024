@@ -21,3 +21,25 @@ Untuk mengetahui ada berapa jenis protocol yang terekam pada traffic, kita bisa 
 
 ### Perolehan flag:  
 ![](Images/1c.png)  
+
+
+# No. 2
+### Soal 
+a. Berapa banyak packet berbasis TCP yang memiliki flag [RST, ACK]?
+
+b. Berapa banyak packet berbasis TCP yang hanya memiliki flag [SYN]?
+
+c. Berapa banyak packet berbasis TCP yang memiliki flag ack, tapi tidak memiliki syn, dan tidak memiliki rst
+
+### Penyelesaian
+Untuk mengetahui berapa banyak packet berbasis TCP yang memiliki flag [RST, ACK] yaitu dengan filter `tcp.flags.reset == 1 && tcp.flags.ack == 1` dan banyaknya packet muncul pada tulisan `displayed` pada bawah windows wireshark.
+![](Images/2a.jpg)  
+
+Untuk mengetahui berapa banyak packet berbasis TCP yang hanya memiliki flag [SYN] yaitu dengan filter `tcp.flags.reset == 1 && tcp.flags.ack == 1` dan banyaknya packet muncul pada tulisan `displayed` pada bawah windows wireshark.
+![](Images/2b.jpg)  
+
+Untuk mengetahui berapa banyak packet berbasis TCP yang memiliki flag ack, tapi tidak memiliki syn dan tidak memiliki rst, yaitu dengan filter `tcp.flags.ack == 1 && tcp.flags.syn == 0 && tcp.flags.reset == 0` dan banyaknya packet muncul pada tulisan `displayed` pada bawah windows wireshark.
+![](Images/2c.jpg)  
+
+### Perolehan flag:  
+![](Images/2d.jpg)  
