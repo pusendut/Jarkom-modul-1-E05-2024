@@ -14,10 +14,10 @@ c. sebutkan secara berurutan berdasarkan alfabet menurun dengan koma sebagai sep
 
 ### Penyelesaian
 Untuk mengetahui berapa banyak packet yang terekam pada file pcapng dapat dilihat pada tulisan `Packets:` pada bawah windows wireshark.
-![](images/1a.jpg)  
+![](Images/1a.jpg)  
 
 Untuk mengetahui ada berapa jenis protocol yang terekam pada traffic, kita bisa membuka tabs `statistics` lalu `protocol hierarchy` dan juga tertera jenis protocol maupun sub-protocol yang terekam pada traffic.
-![](images/1b.jpg)  
+![](Images/1b.jpg)  
 
 ### Perolehan flag:  
-![](images/1c.png)  
+![](Images/1c.png)  
